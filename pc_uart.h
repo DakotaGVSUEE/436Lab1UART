@@ -27,16 +27,10 @@
 #define DEBUG_SHOW_WRITE
 #define DEBUG_SHOW_READ
 
-//HANDLE* hComm;
 HANDLE hMasterCOM;
-//HANDLE* hComm = &hMasterCOM;
 DCB dcbMasterInitState;
 DCB dcbMaster;
-//HANDLE* phComm;
-//int part = 1;
-//*hComm = hMasterCOM;
-//Global Variable Definitions
-//unsigned char SerialBuffer[_RX_BUFFER_SIZE];
+
 volatile int UARTexitFlag;
 typedef struct{
     char buf[_RX_BUFFER_SIZE];
